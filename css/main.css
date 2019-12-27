@@ -1,0 +1,387 @@
+/* 공통사항 */
+/* 메인그린컬러 rgb(1, 70, 1); */
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.pt-serif{
+font-family: 'PT Serif', serif;
+}
+.pt-crimson{
+	font-family: 'Crimson Pro', serif;
+}
+.pt-koserif {
+	font-family: 'Noto Serif KR', serif;
+}
+.pt-opensans {
+	font-family: 'Open Sans', sans-serif;
+}
+.pt-roboto{
+	font-family: 'Roboto', sans-serif;
+}
+
+/* 모바일top부분 */
+.mb-top-wrap{
+ position: relative;
+ width: 100%;
+ position: fixed;
+ z-index: 9999;
+ /* background-color: #fff; */
+ cursor: pointer;
+ display: none;
+}
+.mb-top-wrap > .mb-top-logo {
+	margin: 1rem 1.5rem;
+	width: 130px;
+	opacity: 0;	
+}
+.mb-top-wrap > .mb-top-bg {
+	position: absolute;
+	right: 0; top: 0;
+	height: 58px;
+	width: 58px;
+	/* background-color: #444; */
+}
+.bg-color {
+	background-color: #555;
+}
+.mb-top-wrap > .fa-bars {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 18px;
+	color: #555;
+	font-size:1.5rem;
+	cursor: pointer;
+}
+.mb-top-wrap > .fa-times {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 18px;
+	color: #eee;
+	font-size:1.5rem;
+	cursor: pointer;
+}
+
+.mb-navi-wrap {
+	display: none;
+	height: 100%;
+}
+.mb-navi-wrap > .mb-navis {
+	background-color: rgb(1, 70, 1);
+	color: #ddd;
+}
+.mb-users > ul {
+	flex: 50% 0 0;
+}
+.mb-users > ul > li {
+	padding: 0.2rem 0;
+}
+.mb-users > ul > li:not(:nth-child(1)):hover{
+	color: rgb(1, 70, 1);
+}
+.mb-users > ul > li:first-child {
+	color: #444;
+	padding-left: 2rem;
+	font-size: 0.9rem;
+}
+.mb-top-fab > .fab {
+	color: #444;
+	padding: 0 0.3rem; 
+}
+.mb-top-fab > .fab:hover{
+	color: rgb(1, 70, 1);
+}
+
+/* top부분 */
+.tops {
+ position: fixed;
+ z-index: 9999;
+ width: 100%;
+}
+.tops > .top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.top > ul {
+	flex: 30% 0 1;
+}
+.top-logo {
+	display: none;
+}
+.logo-img {
+	width: 40%;
+}
+.top-contact > li:hover {
+	color:rgb(1, 70, 1);
+}
+.top > .top-user {
+	display: flex;
+	justify-content:flex-end;
+}
+.top > .top-user > li:hover{
+	color:rgb(1, 70, 1);
+}
+.tops > .navis {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	color: #444;
+}
+.tops > .navis > li {
+	flex-grow: 0;
+	padding: 0.4rem 1rem;
+	/* margin-bottom: 5px; */
+	transition: all 0.7s;
+	cursor: pointer;
+	border-bottom: none;
+}
+.tops > .navis > li:hover{
+	color:rgb(1, 70, 1);
+}
+.navi-tit > .navi-bar {
+	width: 0;
+	height: 1px;
+	background-color: rgb(1, 70, 1);
+	margin-top: 2px;
+	transition: all 0.5s;
+	margin: auto;
+}
+.navi-sub {
+	position: absolute;
+	background-color: rgb(1, 70, 1);
+	color: #ddd;
+	text-align: center;
+	font-size: 0.9rem;
+	top : 60px;
+	padding: 10px 10px;
+	margin-top: 35px;
+	z-index: 999;
+	opacity: 0;
+	display: none;
+	/* visibility: hidden; */
+}
+.navi-sub-col > li {
+	padding: 7px 0;
+}
+.navi-sub-col > li:hover{
+	color: #fff;
+}
+.mb-logo-img {
+	width: 30%;
+}
+
+/* banner */
+.banner {
+	overflow: hidden;
+	position: relative;
+}
+.banner > .bans {
+	position: relative;
+}
+
+.pager{
+	width: 100%;
+	display: flex;
+	position: absolute;
+	bottom: 5%;
+	z-index: 5000;
+	justify-content: center;
+	align-items: center;
+}
+.pager > li {
+	height: 12px;
+	margin: 0 5px;
+	cursor: pointer;
+	border-radius:6px; 
+	width: 12px;
+}
+.pager > .cir {
+	background-color: #555;
+}
+.pager > .cir-sel {
+	background-color: rgb(1, 70, 1);
+}
+/* best item부분 */
+.best-items-wrap{
+	background-color: rgb(251, 239, 225);
+}
+.best-item{
+	flex: 16.666% 0 0;
+}
+.best-item > div {
+	background-color: rgba(253, 253, 253, 0.8);
+	color: #333;
+	font-size: 1.2rem;
+	display: flex;
+	opacity: 0;
+	font-size: 1rem;
+}
+.mn-tit {
+	color: rgb(1, 70, 1);
+	letter-spacing: 0.4rem;
+}
+.item-bottom-tit {
+	letter-spacing: 0.4rem;
+}
+.item-bottom-sub {
+	font-size: 1.1rem;
+	color: #333;
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+}
+.item-botton-cont {
+	color: #666;
+}
+
+/* new부분 */
+.newarrivals-wrap {
+	padding: 0 100px;
+	background-color: #eee;
+}
+.arrivals{
+	flex-wrap: wrap;
+}
+.arrival-items {
+	flex: 19% 0 0;
+	margin-bottom: 0.8rem;
+	cursor: pointer;
+}
+.arrival-item-tit{
+	color: #444;
+	font-weight: bolder;
+	font-size: 0.9rem;
+}
+.arrival-item-event{
+	font-weight: bolder;
+	color: #111;
+	font-size: 0.9rem;
+} 
+.arrival-item-pri {
+	color: #444;
+}
+.arrivla-item-img {
+	overflow: hidden;
+	background-color: #555;
+}
+.arrivla-item-img > img {
+	transition: all linear 0.6s;
+}
+.arrivla-item-img > img:hover {
+	transform: scale(1.1);
+	opacity: 0.5;
+}
+
+/* values부분 */
+.values > .values-tit {
+	letter-spacing: 0.4rem;
+}
+.values > .values-sub {
+	font-size: 1.1rem;
+	color: #333;
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+}
+.values > .values-cont {
+	color: #666;
+}
+.val-boxs {
+	margin: 6rem;
+	cursor: pointer;
+	flex-wrap: wrap;
+}
+.val-box {
+	padding: 120px 30px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	/* background-position: center; */
+	transition: all 0.5s;
+	flex: 50% 1 0;
+}
+.val-box:first-child {
+	background-image: url(../img/essay_8.jpg);
+}
+.val-box:nth-child(2) {
+	background-image: url(../img/persiancarpet_chapter1_1.jpg);	
+}
+.val-box-tit{
+	color: #fff;
+	font-size: 1.5rem;
+	letter-spacing: 0.25rem;
+	margin-bottom: 0.25rem;
+	opacity: 0.6;
+	transition: all 0.5s;
+}
+.val-box-bar {
+	width: 45%;
+	height: 1px;
+	background-color: #eee;
+	opacity: 0.5;
+	margin: 0 auto;
+	margin-bottom: 0.25rem;
+	transition: all 0.3s;
+}
+.val-box-cont {
+	color: #fff;
+	font-size: 1.1rem;
+	opacity: 0.6;
+	transition: all 0.5s;
+}
+/* footer부분 */
+.footers {
+	color: #333;
+	font-size: 0.9rem;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.footer {
+	margin: 2rem;
+	border: 1px solid red;
+}
+.footer-tit1, .footer-tit2 {
+	font-weight: bolder;
+}
+.footer-cont {
+	line-height: 1.5rem;
+}
+
+
+
+
+@media screen and (max-width:992px) {
+	.tops{
+		display: none;
+	}
+	.mb-top-wrap{
+		display: block;
+	}
+	.best-item{
+		flex: 33.3333% 0 0;
+	}
+	.arrival-items {
+		flex: 48% 0 0;
+	}
+	.val-box{
+		flex: 100% 0 0;
+	}
+	.newarrivals-wrap {
+		padding: 0 50px;
+	}
+	.val-boxs{
+		margin: 2rem;
+	}
+}
+
+@media screen and (max-width:576px) {
+	.best-item{
+		flex: 50% 0 0;
+	}
+	.arrival-items {
+		flex: 100% 0 0;
+	}
+}

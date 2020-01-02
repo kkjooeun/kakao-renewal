@@ -1,5 +1,5 @@
 /* 공통사항 */
-/* 메인그린컬러 rgb(1, 70, 1); */
+
 @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap');
@@ -71,8 +71,8 @@ font-family: 'PT Serif', serif;
 	height: 100%;
 }
 .mb-navi-wrap > .mb-navis {
-	background-color: rgb(1, 70, 1);
-	color: #ddd;
+	background-color: #ffd400;
+	color: #555;
 }
 .mb-users > ul {
 	flex: 50% 0 0;
@@ -81,7 +81,7 @@ font-family: 'PT Serif', serif;
 	padding: 0.2rem 0;
 }
 .mb-users > ul > li:not(:nth-child(1)):hover{
-	color: rgb(1, 70, 1);
+	color: #ffd400;
 }
 .mb-users > ul > li:first-child {
 	color: #444;
@@ -93,7 +93,7 @@ font-family: 'PT Serif', serif;
 	padding: 0 0.3rem; 
 }
 .mb-top-fab > .fab:hover{
-	color: rgb(1, 70, 1);
+	color: #ffd400;
 }
 
 /* top부분 */
@@ -117,14 +117,14 @@ font-family: 'PT Serif', serif;
 	width: 40%;
 }
 .top-contact > li:hover {
-	color:rgb(1, 70, 1);
+	color: #ffd400;
 }
 .top > .top-user {
 	display: flex;
 	justify-content:flex-end;
 }
 .top > .top-user > li:hover{
-	color:rgb(1, 70, 1);
+	color: #ffd400;
 }
 .tops > .navis {
 	display: flex;
@@ -141,20 +141,20 @@ font-family: 'PT Serif', serif;
 	border-bottom: none;
 }
 .tops > .navis > li:hover{
-	color:rgb(1, 70, 1);
+	color: #ffd400;
 }
 .navi-tit > .navi-bar {
 	width: 0;
 	height: 1px;
-	background-color: rgb(1, 70, 1);
+	background-color: #ffd400;
 	margin-top: 2px;
 	transition: all 0.5s;
 	margin: auto;
 }
 .navi-sub {
 	position: absolute;
-	background-color: rgb(1, 70, 1);
-	color: #ddd;
+	background-color: #ffe043;
+	color: #555;
 	text-align: center;
 	font-size: 0.9rem;
 	top : 60px;
@@ -163,6 +163,7 @@ font-family: 'PT Serif', serif;
 	z-index: 999;
 	opacity: 0;
 	display: none;
+	/* transition: all 0.5s; */
 	/* visibility: hidden; */
 }
 .navi-sub-col > li {
@@ -204,7 +205,7 @@ font-family: 'PT Serif', serif;
 	background-color: #555;
 }
 .pager > .cir-sel {
-	background-color: rgb(1, 70, 1);
+	background-color: #ffd400;
 }
 /* best item부분 */
 .best-items-wrap{
@@ -222,7 +223,7 @@ font-family: 'PT Serif', serif;
 	font-size: 1rem;
 }
 .mn-tit {
-	color: rgb(1, 70, 1);
+	color: #ffd400;
 	letter-spacing: 0.4rem;
 }
 .item-bottom-tit {
@@ -303,10 +304,10 @@ font-family: 'PT Serif', serif;
 	flex: 50% 1 0;
 }
 .val-box:first-child {
-	background-image: url(../img/essay_8.jpg);
+	background-image: url(../img/slo1.jpg);
 }
 .val-box:nth-child(2) {
-	background-image: url(../img/persiancarpet_chapter1_1.jpg);	
+	background-image: url(../img/slo2.jpg);	
 }
 .val-box-tit{
 	color: #fff;
